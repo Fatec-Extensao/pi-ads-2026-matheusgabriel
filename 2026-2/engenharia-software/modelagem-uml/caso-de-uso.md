@@ -21,8 +21,6 @@
 **FA1:**
 * INICIA NO FP1 – CRIAR etapa 6
 
-![Diagrama UML - Manter Pesquisas Parte 2](image_512e43.png)
-
 * Se período de aplicação for diferente do dia que a pesquisa está sendo criada, sistema Automaticamente deixe o status da pesquisa como “INATIVA”
 * Fluxo retorna para etapa 7 do FP1 – criar
 
@@ -47,8 +45,6 @@
 2. O sistema exibe uma lista com as pesquisas cadastradas
 3. Gestor seleciona a pesquisa que deseja remover
 
-![Diagrama UML - Manter Pesquisas Parte 3](image_512e80.png)
-
 4. O sistema exibe os dados da pesquisa em modo leitura e exibe o botão “Excluir Pesquisa”
 5. O sistema exibe uma mensagem de confirmação “Deseja excluir essas Pesquisa?” com a opção “Confirmar” e “Sair”
 6. Gestor aperta em “Confirmar”
@@ -64,7 +60,7 @@
 
 ## Gerar senhas para o anonimato
 
-*(Diagrama de caso de uso incluído na imagem anterior)*
+![Diagrama UML - Gerar Senhas](/assets/imagens/gerenciar-senhas-para-anonimato.png)
 
 **FP1:**
 1. O Gestor Educacional realiza o login no sistema.
@@ -72,9 +68,6 @@
 3. O Gestor seleciona uma pesquisa previamente cadastrada e ativa.
 4. O Gestor seleciona a categoria de participantes desejada (ex: Alunos, Professores).
 5. O Gestor informa a quantidade de senhas que deseja gerar (geração em lote).
-
-![Diagrama UML - Gerar Senhas Parte 2](image_512e9f.png)
-
 6. O sistema processa a requisição e gera as senhas aleatórias.
 7. O sistema associa as senhas à categoria escolhida e as configura para uso único.
 8. O sistema salva as senhas no banco de dados com o status inicial de "não utilizada".
@@ -100,7 +93,7 @@
 
 ## Responder Questionários
 
-![Diagrama UML - Responder Questionários](image_512ec0.png)
+![Diagrama UML - Responder Questionários](/assets/imagens/responder-questionarios.png)
 
 **FP1: Acesso à pesquisa (Alunos/Gestores educacionais/Professores)**
 1. Sistema carrega o app na interface padrão;
@@ -114,9 +107,6 @@
 9. Ator seleciona “Salvar respostas”;
 10. Sistema armazena as respostas no banco de dados;
 11. Sistema marca senha como utilizada;
-
-![Diagrama UML - Responder Questionários Parte 2](image_513165.png)
-
 12. Sistema Finaliza a Pesquisa;
 13. Sistema exibe mensagem “Obrigado por participar!”
 14. Sistema exibe caixa de texto para reiniciar a pesquisa.
@@ -138,9 +128,6 @@
 * INICIA NO FP1 - Acesso à pesquisa FP1 etapa 7
 * Caso usuário saia da pesquisa, o sistema salvará localmente as respostas e guardará num arquivo de cache.
 * Para acessar novamente a pesquisa de onde parou, o sistema retornará a etapa 1.
-
-![Diagrama UML - Responder Questionários Parte 3](image_51316d.png)
-
 **FA4. Ator não finaliza a pesquisa na etapa 8**
 * INICIA NO FP1 - Acesso à pesquisa FP1 etapa 8
 * Sistema salvará localmente as respostas e guardará num arquivo de cache.
@@ -150,10 +137,7 @@
 
 ## Criar Dashboard
 
-![Diagrama UML - Criar Dashboard 1](image_5131a2.png)
-
-![Diagrama UML - Criar Dashboard 2](image_5131a8.png)
-
+![Diagrama UML - Criar Dashboard 1](/assets/imagens/criar-deshaborad.png)
 **FP1: Dashboard**
 1. O Gestor Educacional realiza login no sistema.
 2. O sistema valida as credenciais de acesso.
@@ -175,7 +159,6 @@
 8. O sistema exibe o gráfico de Utilização das Senhas.
 9. O sistema exibe o gráfico de Evolução das Respostas.
 
-![Diagrama UML - Criar Dashboard 3](image_5131c6.png)
 
 10. O sistema exibe o gráfico de Status das Pesquisas.
 11. O sistema exibe os Resultados das Perguntas.
